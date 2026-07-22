@@ -1,0 +1,13 @@
+name: flutter_pro_monorepo
+description: A monorepo for Flutter learning, boilerplates, and guidelines.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  # لا توجد اعتمادات تشغيل مباشرة في الجذر، يتم تثبيت كل حزمة على حدة
+
+dev_dependencies:
+  melos: ^6.0.0

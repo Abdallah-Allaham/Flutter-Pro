@@ -1,0 +1,10 @@
+# melos_managed_dependency_overrides: core_network,core_storage,core_ui,feat_auth
+dependency_overrides:
+  core_network:
+    path: ..\\..\\packages\\core\\core_network
+  core_storage:
+    path: ..\\..\\packages\\core\\core_storage
+  core_ui:
+    path: ..\\..\\packages\\core\\core_ui
+  feat_auth:
+    path: ..\\..\\packages\\features\\feat_auth

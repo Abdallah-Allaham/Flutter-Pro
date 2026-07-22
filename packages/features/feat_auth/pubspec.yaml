@@ -1,0 +1,32 @@
+name: feat_auth
+description: Authentication feature package demonstrating Feature-based Clean Architecture and BLoC.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  bloc_concurrency: ^0.2.2
+  dartz: ^0.10.1
+  get_it: ^7.6.0
+  injectable: ^2.3.2
+  
+  # حزم الـ Core المشتركة (Local dependencies)
+  core_network:
+    path: ../../core/core_network
+  core_storage:
+    path: ../../core/core_storage
+  core_ui:
+    path: ../../core/core_ui
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  injectable_generator: ^2.4.1

@@ -1,0 +1,32 @@
+name: flutter_pro_monorepo
+
+packages:
+  - packages/core/**
+  - packages/features/**
+  - apps/**
+
+command:
+  bootstrap:
+    # نقوم بتشغيل pub get تلقائياً لجميع الحزم وربطها محلياً
+    usePubspecOverrides: true
+
+scripts:
+  analyze:
+    run: melos exec -- flutter analyze
+    description: تشغيل تحليل الكود الثابت (Static Analysis) لجميع الحزم والتطبيقات.
+
+  clean:
+    run: melos exec -- flutter clean
+    description: تنظيف مجلدات الـ Build لجميع الحزم والتطبيقات.
+
+  get:
+    run: melos exec -- flutter pub get
+    description: تحميل التبعيات لجميع الحزم.
+
+  build_all:
+    run: melos exec --keep-going -- "flutter pub run build_runner build --delete-conflicting-outputs"
+    description: تشغيل توليد الأكواد (Code Generation) لجميع الحزم التي تحتوي على build_runner.
+
+  test:
+    run: melos exec --dir-exists="test" -- "flutter test"
+    description: تشغيل جميع الاختبارات لجميع الحزم التي تحتوي على مجلد test.

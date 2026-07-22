@@ -1,0 +1,23 @@
+name: core_storage
+description: Storage package using Flutter Secure Storage and SharedPreferences boilerplate.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.0
+  get_it: ^7.6.0
+  injectable: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  injectable_generator: ^2.4.1

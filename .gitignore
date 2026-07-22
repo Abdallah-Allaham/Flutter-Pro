@@ -1,0 +1,19 @@
+# Dependency directories
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# Build outputs
+build/
+
+# IDE directories
+.idea/
+.vscode/
+*.iws
+*.iml
+*.ipr
+
+# Windows specific
+desktop.ini
+Thumbs.db
