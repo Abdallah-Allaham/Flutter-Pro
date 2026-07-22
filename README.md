@@ -10,6 +10,7 @@
 
 ### [الأسبوع الأول: Architecture at Scale & Modularization](docs/week_1_architecture.md)
 * **المواضيع**: بنية المونو-ريبو (Modular Monorepo)، الـ Clean Architecture القائمة على الميزات، تفاصيل الـ BLoC/Cubit المتقدمة والتحكم في التزامن (Concurrency)، وحقن التبعيات (GetIt + Injectable)، والتنقل المتقدم (GoRouter - StatefulShellRoute).
+* **دليل الاحتراف وأسئلة المقابلات**: [انقر هنا لفتح الدليل والأسئلة (docs/week_1_mastery_guide.md)](docs/week_1_mastery_guide.md).
 * **الأكواد المتوفرة**: هيكلية الحزم المخصصة (Core & Features) تحت مجلد `packages`.
 
 ### [الأسبوع الثاني: Flutter Internals & Performance Tuning](docs/week_2_performance.md)
@@ -29,6 +30,7 @@
 ├── .github/workflows/          # أتمتة الـ CI/CD (أسبوع 4)
 ├── docs/                       # ملفات الشروحات لكل أسبوع
 │   ├── week_1_architecture.md
+│   ├── week_1_mastery_guide.md # دليل الاحتراف وأسئلة المقابلات للـ Senior/Lead
 │   ├── week_2_performance.md
 │   ├── week_3_native_testing.md
 │   └── week_4_devops_lead.md
